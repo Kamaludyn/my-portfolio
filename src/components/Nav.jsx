@@ -31,7 +31,7 @@ const Nav = () => {
         scrolled
           ? "bg-gray-100/60 dark:bg-gray-900/80 border-b border-gray-200 shadow dark:border-gray-700"
           : ""
-      }`}
+      } ${menuOpen ? "bg-gray-100/90 dark:bg-gray-900/90" : ""}`}
     >
       <div className="flex items-center justify-between px-4 py-3 md:px-8">
         {/* Logo */}
@@ -60,16 +60,40 @@ const Nav = () => {
           {/* Social links */}
           <ul className="hidden md:flex gap-6 text-sm font-medium">
             <li className="cursor-pointer text-xl md:text-2xl hover:text-black">
-              <FiGithub />
+              <a
+                href="https://github.com/Kamaludyn/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiGithub />
+              </a>
             </li>
             <li className="cursor-pointer text-xl md:text-2xl hover:text-[#bc1888]">
-              <FiInstagram />
+              <a
+                href="https://www.instagram.com/kaydheen_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiInstagram />
+              </a>
             </li>
             <li className="cursor-pointer text-xl md:text-2xl hover:text-[#1877f2]">
-              <FiFacebook />
+              <a
+                href="https://web.facebook.com/KingKamaludeen305"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiFacebook />
+              </a>
             </li>
             <li className="cursor-pointer text-xl md:text-2xl hover:text-[#1da1f2]">
-              <FiTwitter />
+              <a
+                href="https://x.com/KayDheen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiTwitter />
+              </a>
             </li>
           </ul>
 
@@ -85,7 +109,13 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-3">
+        <div
+          className={`bg-gray-100/20 dark:bg-gray-900/20 border-b border-gray-200 shadow dark:border-gray-700 md:hidden px-4 pb-4 space-y-3 ${
+            scrolled
+              ? "bg-gray-100/20 dark:bg-gray-900/10 border-b border-gray-200 shadow dark:border-gray-700"
+              : ""
+          }`}
+        >
           <ul className="flex flex-col gap-4 text-sm font-medium">
             <li>
               <a href="#home" onClick={toggleMenu}>
@@ -116,13 +146,41 @@ const Nav = () => {
           {/* Socials */}
           <ul className="flex gap-4 text-sm font-medium">
             <li className="cursor-pointer text-xl md:text-2xl hover:text-[#bc1888]">
+            <a
+                href="https://github.com/Kamaludyn/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiGithub />
+              </a>
+            </li>
+            <li className="cursor-pointer text-xl md:text-2xl hover:text-[#bc1888]">
+            <a
+                 href="https://www.instagram.com/kaydheen_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <FiInstagram />
+              </a>
             </li>
             <li className="cursor-pointer text-xl md:text-2xl hover:text-[#1877f2]">
+            <a
+              href="https://web.facebook.com/KingKamaludeen305"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <FiFacebook />
+              </a>
+                
             </li>
             <li className="cursor-pointer text-xl md:text-2xl hover:text-[#1da1f2]">
+            <a
+               href="https://x.com/KayDheen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <FiTwitter />
+              </a>
             </li>
           </ul>
           <DarkModeToggle />

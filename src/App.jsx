@@ -4,13 +4,10 @@ import Stack from "./components/Stack";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
-import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <main className="bg-white px-10 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+    <main className="flex flex-col mx-auto w-[95%] md:w-[80%] text-gray-900 dark:text-gray-100 transition-colors mt-20">
       <Nav />
       <Hero />
       <About />

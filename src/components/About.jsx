@@ -2,9 +2,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full mx-auto px-4 py-16 text-3xl font-light text-gray-600 dark:text-gray-200"
+      className="w-full mx-auto md:px-4 py-16 text-xl md:text-3xl font-light text-gray-600 dark:text-gray-200"
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 border-b border-gray-300 dark:border-gray-700 pb-2">
+      <h2 className="text-2xl md:text-4xl font-bold mb-6 border-b border-gray-300 dark:border-gray-700 pb-2">
         This is Me
       </h2>
       <p className="leading-10 mb-6">

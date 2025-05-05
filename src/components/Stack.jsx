@@ -49,7 +49,7 @@ const Stack = () => {
   return (
     <section
       id="stack"
-      className="max-w-5xl mx-auto px-4 py-16 text-gray-800 dark:text-gray-200"
+      className="md:max-w-5xl mx-auto md:px-4 py-16 text-gray-800 dark:text-gray-200"
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-10 border-b border-gray-300 dark:border-gray-700 pb-2">
         My Tech Stack
