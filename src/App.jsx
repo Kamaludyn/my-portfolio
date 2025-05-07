@@ -7,7 +7,7 @@ import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
-    <main className="flex flex-col mx-auto w-[95%] md:w-[80%] text-gray-900 dark:text-gray-100 transition-colors mt-20">
+    <main className="flex flex-col mx-auto w-[95%] md:w-[80%] text-gray-800 dark:text-gray-200 transition-colors mt-20">
       <Nav />
       <Hero />
       <About />

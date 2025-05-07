@@ -73,10 +73,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="md:max-w-5xl mx-auto md:px-4 py-16 text-gray-800 dark:text-gray-200"
-    >
+    <section id="projects" className="w-full mx-auto md:px-4 py-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-10 border-b border-gray-300 dark:border-gray-700 pb-2">
         Projects
       </h2>
@@ -99,33 +96,35 @@ const Projects = () => {
               {project.description}
             </p>
 
-            <ul className="flex flex-wrap gap-2 text-sm text-gray-600 dark:text-gray-400 mb-4">
-              {project.tech.map((tech, index) => (
-                <li
-                  key={index}
-                  className="px-2 py-1 bg-gray-200 dark:bg-gray-800 rounded"
+            <div className="mt-auto ">
+              <ul className="flex flex-wrap gap-2 text-sm text-gray-600 dark:text-gray-400 mb-4 mt-auto">
+                {project.tech.map((tech, index) => (
+                  <li
+                    key={index}
+                    className="px-2 py-1 bg-gray-200 dark:bg-gray-800 rounded"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-auto flex justify-between">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-teal-700 dark:text-teal-300 font-semibold hover:underline mt-auto"
                 >
-                  {tech}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-auto flex justify-between">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-teal-700 dark:text-teal-300 font-semibold hover:underline mt-auto"
-              >
-                View Project →
-              </a>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-teal-700 dark:text-teal-300 font-semibold hover:underline mt-auto"
-              >
-                View Github Repo →
-              </a>
+                  View Project →
+                </a>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-teal-700 dark:text-teal-300 font-semibold hover:underline mt-auto"
+                >
+                  View Github Repo →
+                </a>
+              </div>
             </div>
           </div>
         ))}

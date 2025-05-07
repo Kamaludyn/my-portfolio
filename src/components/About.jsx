@@ -2,12 +2,12 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full mx-auto md:px-4 py-16 text-xl md:text-3xl font-light text-gray-600 dark:text-gray-200"
+      className="w-full mx-auto md:px-4 py-16 text-lg sm:text-xl font-light"
     >
       <h2 className="text-2xl md:text-4xl font-bold mb-6 border-b border-gray-300 dark:border-gray-700 pb-2">
-        This is Me
+        About Me
       </h2>
-      <p className="leading-10 mb-6">
+      <p className="leading-10 mb-6 text-gray-700 dark:text-gray-400">
         I have a strong focus on building
         <strong> scalable, real-world web applications</strong> that deliver
         real value. I specialize in <strong>React</strong>,{" "}
@@ -18,7 +18,7 @@ const About = () => {
         <strong>MongoDB</strong> to power robust, API-driven applications.
       </p>
 
-      <p className="leading-10 mb-6">
+      <p className="leading-10 mb-6 text-gray-700 dark:text-gray-400">
         What sets me apart is my commitment to solving real problems, not just
         writing code. I enjoy diving deep into user needs, collaborating across
         teams, and continuously learning to improve both my craft and the
