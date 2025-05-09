@@ -42,20 +42,45 @@ const Nav = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex lg:gap-6 text-sm font-medium">
-          <li className="p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800">
-            <a href="#home">Home</a>
+          <li>
+            <a
+              href="#home"
+              className="block p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
+            >
+              Home
+            </a>
           </li>
-          <li className="p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800">
-            <a href="#about">About</a>
+          <li>
+            <a
+              href="#about"
+              className="block p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
+            >
+              About
+            </a>
           </li>
-          <li className="p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800">
-            <a href="#stack">Tech Stack</a>
+          <li>
+            <a
+              href="#stack"
+              className="block p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
+            >
+              Tech Stack
+            </a>
           </li>
-          <li className="p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800">
-            <a href="#projects">Projects</a>
+          <li>
+            <a
+              href="#projects"
+              className="block p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
+            >
+              Projects
+            </a>
           </li>
-          <li className="p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800">
-            <a href="#contact">Contact</a>
+          <li>
+            <a
+              href="#contact"
+              className="block p-1 lg:p-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800"
+            >
+              Contact
+            </a>
           </li>
         </ul>
 
