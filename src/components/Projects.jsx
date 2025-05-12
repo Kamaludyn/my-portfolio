@@ -4,7 +4,7 @@ const projects = [
     description:
       "This is a cloud-based networking platform that connects students, mentors, and employers to facilitate career growth, mentorship, and job opportunities.",
     tech: ["React", "Tailwind CSS", "Socket.IO"],
-    github: "https://github.com/Kamaludyn/careerconnect",
+    github: "https://github.com/Kamaludyn/career_connect_frontend",
     link: "https://career-connect-frontend-three.vercel.app/",
     role: "Frontend Developer",
     stackLevel: "Full Stack",
@@ -81,7 +81,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="flex flex-col bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700 transition hover:shadow-lg hover:scale-[1.009] ease-in-out"
+            className="flex flex-col bg-white dark:bg-gray-900 rounded-lg shadow-md p-4 md:p-6 border border-gray-200 dark:border-gray-700 transition hover:shadow-lg hover:scale-[1.009] ease-in-out"
           >
             <h3 className="text-xl font-semibold mb-2 text-teal-600 dark:text-teal-400">
               {project.title}

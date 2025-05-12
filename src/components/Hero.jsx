@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex flex-col md:gap-2 md:flex-row items-center justify-center pt-20 md:pt-16 md:mt-0 md:mb-20"
+      className="flex flex-col md:gap-2 md:flex-row items-center justify-center pt-20 md:pt-16 md:mt-0 md:mb-10"
     >
       {/* Hero Section */}
       <section className="flex flex-col self-end md:w-[58%] h-full mb-4 md:mb-4">

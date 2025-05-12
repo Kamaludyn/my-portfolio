@@ -2,7 +2,7 @@ import { SiLinkedin, SiMailboxdotorg } from "react-icons/si";
 
 const Contact = () => {
   return (
-    <section id="contact" className="mx-auto md:px-4 py-16">
+    <section id="contact" className="w-full mx-auto md:px-4 py-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-10 border-b border-gray-300 dark:border-gray-700 pb-2">
         Contact Me
       </h2>
