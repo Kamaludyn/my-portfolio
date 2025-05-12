@@ -20,18 +20,22 @@ const Contact = () => {
         .
       </p>
 
-      <div className="space-y-4 text-lg">
-        <p className="flex items-center gap-2">
-          <SiMailboxdotorg /> Email:{" "}
+      <div className="w-full space-y-4 text-lg">
+        <p className="flex items-start gap-2">
+          <span className="flex gap-2 items-center">
+            <SiMailboxdotorg className="text-sm md:text-lg" /> Email:
+          </span>
           <a
             href="mailto:kamaludeen.abubakar.dev@gmail.com"
-            className="text-teal-700 dark:text-teal-400 underline hover:text-teal-900"
+            className="break-all text-teal-700 dark:text-teal-400 underline hover:text-teal-900"
           >
             kamaludeen.abubakar.dev@gmail.com
           </a>
         </p>
-        <p className="flex items-center gap-2">
-          <SiLinkedin /> LinkedIn:{" "}
+        <p className="flex items-start gap-2">
+          <span className="flex gap-2 items-center">
+            <SiLinkedin className="text-sm md:text-lg" /> LinkedIn:{" "}
+          </span>
           <a
             href="https://www.linkedin.com/in/kamaludeen-abubakar-8b2b58160"
             target="_blank"
