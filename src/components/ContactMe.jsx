@@ -40,7 +40,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/kamaludeen-abubakar-8b2b58160"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-700 dark:text-teal-400 underline hover:text-teal-900"
+            className="break-all text-teal-700 dark:text-teal-400 underline hover:text-teal-900"
           >
             linkedin.com/in/kamaludeen-abubakar-8b2b58160
           </a>
